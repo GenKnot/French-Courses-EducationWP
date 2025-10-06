@@ -2,6 +2,16 @@
   "name": "french-courses-education-wp",
   "version": "0.1.0",
   "private": true,
+  "author": "GenKnot",
+  "homepage": "https://french-courses-educationwp.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GenKnot/French-Courses-EducationWP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GenKnot/French-Courses-EducationWP/issues"
+  },
+  "keywords": ["french", "courses", "education", "nextjs", "typescript"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

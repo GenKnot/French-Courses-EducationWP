@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface Course {
   id: string;
@@ -133,26 +134,30 @@ export default function FilterSidebar({ courses, onFilterChange }: FilterSidebar
         <div>
           <h3 className="text-lg font-semibold text-gray-900 mb-4">LATEST COURSES</h3>
           <div className="space-y-3">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-red-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xs">FR</span>
+            <Link href="/courses/basic-course-0-preparatory" className="block">
+              <div className="flex items-center space-x-3 hover:bg-gray-50 p-2 rounded transition-colors">
+                <div className="w-12 h-12 bg-red-600 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">FR</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium text-gray-900">Basic Course 0 - Preparatory</h4>
+                  <p className="text-xs text-gray-500">Pronunciation and Basic Vocabulary</p>
+                  <p className="text-sm font-bold text-gray-900">$160.00</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="text-sm font-medium text-gray-900">Pronunciation and Basic Vocabulary</h4>
-                <p className="text-xs text-gray-500">Master French pronunciation and build essential vocabulary</p>
-                <p className="text-sm font-bold text-gray-900">$160.00</p>
+            </Link>
+            <Link href="/courses/basic-course-preparatory-a1" className="block">
+              <div className="flex items-center space-x-3 hover:bg-gray-50 p-2 rounded transition-colors">
+                <div className="w-12 h-12 bg-blue-600 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">FR</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium text-gray-900">Basic Course Preparatory - A1</h4>
+                  <p className="text-xs text-gray-500">Basic Grammar and Speaking Introduction</p>
+                  <p className="text-sm font-bold text-gray-900">$680.00</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xs">FR</span>
-              </div>
-              <div className="flex-1">
-                <h4 className="text-sm font-medium text-gray-900">Basic Grammar and Speaking Introduction</h4>
-                <p className="text-xs text-gray-500">Learn fundamental grammar rules and start speaking</p>
-                <p className="text-sm font-bold text-gray-900">$680.00</p>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import FilterSidebar from "./FilterSidebar";
 import CourseHeader from "./CourseHeader";
 import Pagination from "./Pagination";
 import Footer from "./Footer";
+import { coursesData } from "@/data/courses";
 
 interface Course {
   id: string;
@@ -27,107 +28,29 @@ export default function CourseLayout() {
     priceRange: "all"
   });
 
-  const courses: Course[] = [
-    {
-      id: "1",
-      title: "Pronunciation and Basic Vocabulary",
-      description: "Master French pronunciation and build essential vocabulary foundation for beginners",
-      price: 160.00,
-      views: 45,
-      students: 12,
-      category: "Basic Courses"
-    },
-    {
-      id: "2", 
-      title: "Basic Grammar and Speaking Introduction",
-      description: "Learn fundamental grammar rules and start speaking with confidence in French",
-      price: 680.00,
-      views: 78,
-      students: 18,
-      category: "Basic Courses"
-    },
-    {
-      id: "3",
-      title: "Grammar Application and Speaking Advancement", 
-      description: "Apply grammar knowledge in real conversations and improve your fluency",
-      price: 1200.00,
-      views: 92,
-      students: 25,
-      category: "Basic Courses"
-    },
-    {
-      id: "4",
-      title: "Writing Skills, Advanced Grammar and Speaking Training",
-      description: "Develop writing abilities and master advanced grammatical structures",
-      price: 2600.00,
-      views: 67,
-      students: 15,
-      category: "Basic Courses"
-    },
-    {
-      id: "5",
-      title: "Advanced Writing Techniques and Speaking Training",
-      description: "Perfect your writing style and achieve native-level speaking skills",
-      price: 3400.00,
-      views: 54,
-      students: 12,
-      category: "Basic Courses"
-    },
-    {
-      id: "6",
-      title: "Complete Exam Training with Examiner Coaching",
-      description: "Comprehensive exam preparation with personalized examiner guidance",
-      price: 4500.00,
-      views: 89,
-      students: 22,
-      category: "Exam Preparation"
-    },
-    {
-      id: "7",
-      title: "Complete Exam Training for Educational Institutions",
-      description: "Specialized exam preparation program designed for schools and institutions",
-      price: 3600.00,
-      views: 76,
-      students: 19,
-      category: "Exam Preparation"
-    },
-    {
-      id: "8",
-      title: "Combo Zero to CLB5 Exam Package",
-      description: "Complete learning path from beginner to CLB5 with exam preparation",
-      price: 5640.00,
-      views: 98,
-      students: 28,
-      category: "Combo Package"
-    },
-    {
-      id: "9",
-      title: "Combo Zero to B2 Exam Package",
-      description: "Comprehensive package from beginner to B2 level with exam prep",
-      price: 8240.00,
-      views: 85,
-      students: 24,
-      category: "Combo Package"
-    },
-    {
-      id: "10",
-      title: "Combo Zero to CLB7 Ultimate Package",
-      description: "Ultimate learning package from beginner to CLB7 excellence",
-      price: 11640.00,
-      views: 72,
-      students: 20,
-      category: "Combo Package"
-    },
-    {
-      id: "11",
-      title: "VIP Unlimited Learning Program",
-      description: "Unlimited learning with personalized one-on-one examiner coaching",
-      price: 19999.00,
-      views: 156,
-      students: 35,
-      category: "VIP Course"
+  const courses: Course[] = Object.entries(coursesData).map(([slug, courseData], index) => {
+    let category = "Basic Courses";
+    if (courseData.category === "EXAM") {
+      category = "Exam Preparation";
+    } else if (courseData.category === "COMBO") {
+      category = "Combo Package";
+    } else if (courseData.category === "VIP") {
+      category = "VIP Course";
     }
-  ];
+
+    const baseViews = 50 + (index * 7);
+    const baseStudents = 10 + (index * 2);
+
+    return {
+      id: slug,
+      title: courseData.title,
+      description: courseData.introduction.description,
+      price: parseFloat(courseData.price.replace("$", "").replace(",", "")),
+      views: baseViews,
+      students: baseStudents,
+      category: category
+    };
+  });
 
   const handleSearchChange = (search: string) => {
     setSearchTerm(search);
@@ -192,6 +115,7 @@ export default function CourseLayout() {
               {filteredCourses.map((course) => (
                 <CourseCard
                   key={course.id}
+                  id={course.id}
                   title={course.title}
                   description={course.description}
                   price={course.price}
