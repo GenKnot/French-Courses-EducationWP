@@ -54,7 +54,7 @@ export default function CourseDetailContent({ course }: CourseDetailContentProps
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id as any)}
+              onClick={() => setActiveTab(tab.id as "overview" | "curriculum" | "instructor" | "reviews")}
               className={`flex-1 py-3 sm:py-4 px-3 sm:px-6 font-semibold transition text-xs sm:text-sm whitespace-nowrap ${
                 activeTab === tab.id
                   ? "bg-gray-50 text-gray-900 border-b-2 border-gray-900"
@@ -221,7 +221,7 @@ export default function CourseDetailContent({ course }: CourseDetailContentProps
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed italic">"{review.comment}"</p>
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed italic">&ldquo;{review.comment}&rdquo;</p>
                   </div>
                 </div>
               </div>

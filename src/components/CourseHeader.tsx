@@ -3,7 +3,6 @@
 import { useState } from "react";
 
 interface CourseHeaderProps {
-  totalResults: number;
   onSearchChange: (searchTerm: string) => void;
   onSortChange: (sortBy: string) => void;
   viewMode: 'grid' | 'list';
@@ -11,7 +10,6 @@ interface CourseHeaderProps {
 }
 
 export default function CourseHeader({ 
-  totalResults, 
   onSearchChange, 
   onSortChange,
   viewMode,

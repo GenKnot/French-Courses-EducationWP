@@ -101,7 +101,6 @@ export default function CourseLayout() {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1">
             <CourseHeader
-              totalResults={filteredCourses.length}
               onSearchChange={handleSearchChange}
               onSortChange={handleSortChange}
               viewMode={viewMode}
