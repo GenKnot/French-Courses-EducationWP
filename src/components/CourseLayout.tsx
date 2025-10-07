@@ -109,7 +109,7 @@ export default function CourseLayout() {
             
             <div className={viewMode === 'grid' 
               ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-stretch"
-              : ""
+              : "space-y-4"
             }>
               {filteredCourses.map((course) => (
                 <CourseCard
