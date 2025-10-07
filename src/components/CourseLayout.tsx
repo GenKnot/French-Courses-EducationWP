@@ -96,7 +96,7 @@ export default function CourseLayout() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-white pt-20">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-4" style={{ maxWidth: '1170px' }}>
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1">

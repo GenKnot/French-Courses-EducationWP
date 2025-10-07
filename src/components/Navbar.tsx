@@ -67,7 +67,7 @@ export default function Navbar() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1170px' }}>
         <div className="flex items-center justify-between" style={{ height: '90px' }}>
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link href="https://megaeducations.com/" className="flex items-center" target="_self">
               <Image
                 src="/Logo/cropped-mgedu.png"
                 alt="Mega Global EDUCATION"
@@ -144,14 +144,19 @@ export default function Navbar() {
                 </button>
               </div>
               <div className="flex flex-col items-end">
-                <Image
-                  src="/Logo/IELTSPROMOCODE.png"
-                  alt="IELTS"
-                  width={185}
-                  height={66}
-                  className="h-12 2xl:h-15 w-auto"
-                  priority
-                />
+                <Link 
+                  href="https://ieltsregistration.britishcouncil.org/?country=ca&_ga=2.260320964.8761621.1667605541-297501238.1665683038&_gl=1*u66zpg*_ga*Mjk3NTAxMjM4LjE2NjU2ODMwMzg.*_ga_X5M3D7HLQQ*MTY2NzYwNTU0MS4yLjEuMTY2NzYwNTU4Ny4wLjAuMA..*_ga_GEVXDTF0HX*MTY2NzYwNTU0MS4yLjEuMTY2NzYwNTU4Ny4xNC4wLjA." 
+                  target="_self"
+                >
+                  <Image
+                    src="/Logo/IELTSPROMOCODE.png"
+                    alt="IELTS"
+                    width={185}
+                    height={66}
+                    className="h-12 2xl:h-15 w-auto"
+                    priority
+                  />
+                </Link>
               </div>
             </div>
           </div>
