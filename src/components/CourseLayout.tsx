@@ -13,8 +13,6 @@ interface Course {
   title: string;
   description: string;
   price: number;
-  views: number;
-  students: number;
   category: string;
 }
 
@@ -38,16 +36,11 @@ export default function CourseLayout() {
       category = "VIP Course";
     }
 
-    const baseViews = 50 + (index * 7);
-    const baseStudents = 10 + (index * 2);
-
     return {
       id: slug,
       title: courseData.title,
       description: courseData.introduction.description,
       price: parseFloat(courseData.price.replace("$", "").replace(",", "")),
-      views: baseViews,
-      students: baseStudents,
       category: category
     };
   });
@@ -89,7 +82,7 @@ export default function CourseLayout() {
       case "price-high-low":
         return b.price - a.price;
       case "most-popular":
-        return b.students - a.students;
+        return 0;
       default:
         return 0;
     }
@@ -118,8 +111,6 @@ export default function CourseLayout() {
                   title={course.title}
                   description={course.description}
                   price={course.price}
-                  views={course.views}
-                  students={course.students}
                   category={course.category}
                   viewMode={viewMode}
                 />

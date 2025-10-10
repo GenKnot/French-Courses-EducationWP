@@ -7,8 +7,6 @@ interface CourseCardProps {
   title: string;
   description: string;
   price: number;
-  views: number;
-  students: number;
   category: string;
   viewMode: 'grid' | 'list';
 }
@@ -18,8 +16,6 @@ export default function CourseCard({
   title,
   description,
   price,
-  views,
-  students,
   category,
   viewMode
 }: CourseCardProps) {
@@ -45,25 +41,11 @@ export default function CourseCard({
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 line-clamp-2">{title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mb-3 line-clamp-2">{description}</p>
                 </div>
-                <div className="flex-shrink-0">
-                  <div className="text-lg sm:text-xl font-bold text-red-600">${price.toFixed(0)}</div>
+                <div className="flex-shrink-0 text-right">
+                  <div className="text-lg sm:text-xl font-bold text-red-600">${price.toFixed(0)} CAD</div>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 text-xs sm:text-sm text-gray-500 mt-3">
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                  </svg>
-                  <span>{views} views</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M16,4C18.2,4 20,5.8 20,8C20,10.2 18.2,12 16,12C13.8,12 12,10.2 12,8C12,5.8 13.8,4 16,4M16,13C18.67,13 24,14.33 24,17V20H8V17C8,14.33 13.33,13 16,13M8,12C10.2,12 12,10.2 12,8C12,5.8 10.2,4 8,4C5.8,4 4,5.8 4,8C4,10.2 5.8,12 8,12M8,13C5.33,13 0,14.33 0,17V20H6V17C6,15.9 6.4,14.9 7,14.1C7.6,14.4 8.3,14.5 9,14.5C9.7,14.5 10.4,14.4 11,14.1C11.6,14.9 12,15.9 12,17V20H18V17C18,14.33 12.67,13 10,13H8Z"/>
-                  </svg>
-                  <span>{students} students</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -98,25 +80,8 @@ export default function CourseCard({
             <div className="w-12 h-0.5 bg-blue-400 mx-auto"></div>
           </div>
           
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <div className="flex items-center">
-                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                </svg>
-                <span>{views}</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M16,4C18.2,4 20,5.8 20,8C20,10.2 18.2,12 16,12C13.8,12 12,10.2 12,8C12,5.8 13.8,4 16,4M16,13C18.67,13 24,14.33 24,17V20H8V17C8,14.33 13.33,13 16,13M8,12C10.2,12 12,10.2 12,8C12,5.8 10.2,4 8,4C5.8,4 4,5.8 4,8C4,10.2 5.8,12 8,12M8,13C5.33,13 0,14.33 0,17V20H6V17C6,15.9 6.4,14.9 7,14.1C7.6,14.4 8.3,14.5 9,14.5C9.7,14.5 10.4,14.4 11,14.1C11.6,14.9 12,15.9 12,17V20H18V17C18,14.33 12.67,13 10,13H8Z"/>
-                </svg>
-                <span>{students}</span>
-              </div>
-            </div>
-            
-            <div className="text-right">
-              <p className="text-lg font-bold text-red-600">${price.toFixed(0)}</p>
-            </div>
+          <div className="text-center">
+            <p className="text-xl font-bold text-red-600">${price.toFixed(0)} CAD</p>
           </div>
         </div>
       </div>

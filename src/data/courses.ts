@@ -17,7 +17,7 @@ export const coursesData = {
       duration: "10 hours",
       period: "2-3 weeks",
       suitableFor: "No Prerequisites",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "Preparatory Level",
       passRate: "100%",
       features: "Pronunciation Correction + Vocabulary Memory Methods"
@@ -85,25 +85,25 @@ export const coursesData = {
         image: "/Coures.png"
       },
       {
-        name: "Li Wen",
-        title: "Chinese-French Bilingual Teaching Expert",
-        bio: "8 years studying in France, proficient in Chinese-French bilingual teaching, skilled at helping Chinese students get started quickly",
+        name: "Antoine Laurent",
+        title: "French Language Education Specialist",
+        bio: "Native French speaker with extensive experience in French language instruction, specializing in helping international students master French pronunciation and grammar fundamentals",
         image: "/Coures.png"
       }
     ],
     reviews: [
       {
-        name: "Liu Xiaoming",
+        name: "Marcus Johnson",
         role: "Engineer",
         rating: 5,
-        comment: "As a complete beginner, this course helped me master French pronunciation principles in a short time. The teacher's pronunciation corrections are very timely, and now I can read basic French words.",
+        comment: "This course really helped me understand French pronunciation basics. The teacher's corrections were very helpful, and now I can read basic French words confidently.",
         image: "/Coures.png"
       },
       {
-        name: "Zhang Lihua",
+        name: "Isabella Williams",
         role: "Doctor",
         rating: 5,
-        comment: "The course design is very scientific, progressing from alphabet to pronunciation to vocabulary. Although there are only 10 class hours, the content is very substantial. I particularly like the vocabulary memory method section, it's very effective.",
+        comment: "The course structure is well-designed, progressing logically from alphabet to pronunciation to vocabulary. The vocabulary memory techniques are very effective.",
         image: "/Coures.png"
       }
     ]
@@ -128,7 +128,7 @@ export const coursesData = {
       duration: "40 hours",
       period: "8-10 weeks",
       suitableFor: "Completed Preparatory Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "A1 Level",
       passRate: "96%",
       features: "Grammar Foundation + Speaking Practice"
@@ -225,9 +225,9 @@ export const coursesData = {
     ],
     instructors: [
       {
-        name: "Chen Wei",
-        title: "French-Chinese Language Bridge Expert",
-        bio: "Master's in Applied Linguistics, expert in helping Chinese speakers transition from beginner to intermediate French levels",
+        name: "Antoine Laurent",
+        title: "French Language Education Specialist",
+        bio: "Native French speaker with extensive experience in French language instruction, specializing in helping international students master French pronunciation and grammar fundamentals",
         image: "/Coures.png"
       },
       {
@@ -239,17 +239,17 @@ export const coursesData = {
     ],
     reviews: [
       {
-        name: "Wang Mei",
+        name: "Olivia Thompson",
         role: "Marketing Manager",
         rating: 5,
-        comment: "This A1 course was exactly what I needed after completing the preparatory level. The grammar explanations are clear and the speaking practice really helped build my confidence. I can now have basic conversations in French!",
+        comment: "This A1 course was exactly what I needed after completing the preparatory level. The grammar explanations are clear and the speaking practice really helped build my confidence.",
         image: "/Coures.png"
       },
       {
-        name: "Li Jun",
+        name: "Sebastian Wilson",
         role: "Student",
         rating: 5,
-        comment: "The 40-hour program is very well structured. Each lesson builds perfectly on the previous one. The teachers are patient and provide excellent feedback. I especially loved the verb conjugation section - it made everything so much clearer.",
+        comment: "The 40-hour program is very well structured. Each lesson builds perfectly on the previous one. The teachers are patient and provide excellent feedback.",
         image: "/Coures.png"
       }
     ]
@@ -274,7 +274,7 @@ export const coursesData = {
       duration: "70 hours",
       period: "12-15 weeks",
       suitableFor: "Completed A1 Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "A2 Level",
       passRate: "94%",
       features: "Advanced Grammar + Fluency Building"
@@ -412,9 +412,9 @@ export const coursesData = {
         image: "/Coures.png"
       },
       {
-        name: "Emma Chen",
-        title: "Intermediate French Conversation Specialist",
-        bio: "Bilingual education specialist with expertise in conversation fluency development and cross-cultural communication",
+        name: "Antoine Laurent",
+        title: "French Language Education Specialist",
+        bio: "Native French speaker with extensive experience in French language instruction, specializing in helping international students master French pronunciation and grammar fundamentals",
         image: "/Coures.png"
       }
     ],
@@ -423,14 +423,14 @@ export const coursesData = {
         name: "Sarah Kim",
         role: "Translator",
         rating: 5,
-        comment: "This A1-A2 course was incredibly comprehensive! The 70 hours covered everything I needed to reach A2 level. The grammar explanations were thorough and the speaking practice really improved my fluency. I especially loved the cultural integration section.",
+        comment: "This A1-A2 course was incredibly comprehensive! The 70 hours covered everything I needed to reach A2 level. The grammar explanations were thorough and the speaking practice really improved my fluency.",
         image: "/Coures.png"
       },
       {
-        name: "Alex Chen",
+        name: "Alex Rodriguez",
         role: "Business Analyst",
         rating: 5,
-        comment: "The structured approach of this course is excellent. Moving from basic A1 to confident A2 in 5 comprehensive stages was perfect. The teachers provided great feedback and the writing exercises really helped me express complex ideas in French.",
+        comment: "The structured approach of this course is excellent. Moving from basic A1 to confident A2 in 5 comprehensive stages was perfect. The teachers provided great feedback.",
         image: "/Coures.png"
       }
     ]
@@ -455,7 +455,7 @@ export const coursesData = {
       duration: "160 hours",
       period: "20-24 weeks",
       suitableFor: "Completed A2 Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "B1 Level",
       passRate: "92%",
       features: "Advanced Writing + Complex Grammar + Fluency Training"
@@ -574,14 +574,14 @@ export const coursesData = {
         name: "David Martinez",
         role: "University Professor",
         rating: 5,
-        comment: "This A2-B1 course is exceptionally well-structured. The 160 hours are perfectly distributed across writing, grammar, and speaking. The advanced writing modules particularly helped me achieve academic-level French. The instructors are knowledgeable and provide excellent feedback.",
+        comment: "This A2-B1 course is exceptionally well-structured. The 160 hours are perfectly distributed across writing, grammar, and speaking. The advanced writing modules particularly helped me achieve academic-level French.",
         image: "/Coures.png"
       },
       {
-        name: "Lisa Wang",
+        name: "Lisa Anderson",
         role: "Business Manager",
         rating: 5,
-        comment: "The professional focus of this course is exactly what I needed. The business communication modules and presentation skills training have been invaluable for my career. The cultural context sections helped me understand French business etiquette perfectly.",
+        comment: "The professional focus of this course is exactly what I needed. The business communication modules and presentation skills training have been invaluable for my career.",
         image: "/Coures.png"
       }
     ]
@@ -606,7 +606,7 @@ export const coursesData = {
       duration: "200 hours",
       period: "25-30 weeks",
       suitableFor: "Completed B1 Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "B2 Level",
       passRate: "90%",
       features: "Sophisticated Writing + Complex Grammar + Advanced Fluency"
@@ -715,14 +715,14 @@ export const coursesData = {
         name: "Dr. Michael Thompson",
         role: "Research Scientist",
         rating: 5,
-        comment: "This B1-B2 course exceeded all my expectations. The 200-hour curriculum is incredibly sophisticated and well-designed. The advanced writing modules helped me publish research papers in French journals. The instructors are truly world-class experts.",
+        comment: "This B1-B2 course exceeded all my expectations. The 200-hour curriculum is incredibly sophisticated and well-designed. The advanced writing modules helped me publish research papers in French journals.",
         image: "/Coures.png"
       },
       {
         name: "Elena Rodriguez",
         role: "International Business Executive",
         rating: 5,
-        comment: "The sophisticated approach of this course is remarkable. The advanced oral communication training and cultural mastery sections prepared me perfectly for executive roles in French corporations. The debate and negotiation modules were particularly valuable.",
+        comment: "The sophisticated approach of this course is remarkable. The advanced oral communication training and cultural mastery sections prepared me perfectly for executive roles in French corporations.",
         image: "/Coures.png"
       }
     ]
@@ -747,7 +747,7 @@ export const coursesData = {
       duration: "132 hours",
       period: "16-20 weeks",
       suitableFor: "B1-B2 Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "TEF/TCF Success",
       passRate: "95%",
       features: "Real Exam Practice + Current Examiner Training"
@@ -842,25 +842,25 @@ export const coursesData = {
         image: "/Coures.png"
       },
       {
-        name: "ABLE Examiner",
+        name: "Claire Moreau",
         title: "Current TEF/TCF Examiner",
-        bio: "Experienced French language instructor and current examiner. ABLE is a current TEF/TCF examiner with over 10 years of experience in French language education. Specializes in exam preparation and has helped hundreds of students achieve their immigration goals.",
+        bio: "Experienced French language instructor and current examiner with over 10 years of experience in French language education. Specializes in exam preparation and has helped hundreds of students achieve their immigration goals.",
         image: "/Coures.png"
       }
     ],
     reviews: [
       {
-        name: "Zhang Wei",
+        name: "Robert Johnson",
         role: "Immigration Candidate",
         rating: 5,
-        comment: "This exam preparation course was exactly what I needed! The current examiner's insights were invaluable, and the 100 hours of recorded content allowed me to practice extensively. I achieved my target score on the first attempt. The course structure is perfect for serious exam preparation.",
+        comment: "This exam preparation course was exactly what I needed! The current examiner's insights were invaluable, and the 100 hours of recorded content allowed me to practice extensively. I achieved my target score on the first attempt.",
         image: "/Coures.png"
       },
       {
         name: "Maria Santos",
         role: "University Student",
         rating: 5,
-        comment: "The combination of authentic materials and examiner coaching made all the difference. The speaking practice with current examiners was particularly helpful - I knew exactly what to expect on exam day. The 32 hours of test-taking strategies were incredibly detailed and effective.",
+        comment: "The combination of authentic materials and examiner coaching made all the difference. The speaking practice with current examiners was particularly helpful - I knew exactly what to expect on exam day.",
         image: "/Coures.png"
       }
     ]
@@ -885,7 +885,7 @@ export const coursesData = {
       duration: "132 hours",
       period: "16-20 weeks",
       suitableFor: "B1-B2 Level",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "TEF/TCF Success",
       passRate: "96%",
       features: "Real Exam Practice + Current Examiner Training + School Management"
@@ -980,25 +980,25 @@ export const coursesData = {
         image: "/Coures.png"
       },
       {
-        name: "ABLE Examiner",
+        name: "Claire Moreau",
         title: "Current TEF/TCF Examiner",
-        bio: "Experienced French language instructor and current examiner. ABLE is a current TEF/TCF examiner with over 10 years of experience in French language education. Specializes in exam preparation and has helped hundreds of students achieve their immigration goals.",
+        bio: "Experienced French language instructor and current examiner with over 10 years of experience in French language education. Specializes in exam preparation and has helped hundreds of students achieve their immigration goals.",
         image: "/Coures.png"
       }
     ],
     reviews: [
       {
-        name: "Liu Ming",
+        name: "Thomas Anderson",
         role: "University Student",
         rating: 5,
-        comment: "The school edition was perfect for our university program! The group learning dynamics really helped, and the institutional dashboard allowed our professors to track our progress effectively. The collaborative approach made exam preparation much more engaging and less stressful.",
+        comment: "The school edition was perfect for our university program! The group learning dynamics really helped, and the institutional dashboard allowed our professors to track our progress effectively.",
         image: "/Coures.png"
       },
       {
-        name: "Sophie Chen",
+        name: "Sophie Martinez",
         role: "College Student",
         rating: 5,
-        comment: "The institutional pricing made this course accessible for our entire class. The peer review sessions for writing were incredibly valuable, and having examiner feedback at the institutional level provided consistency. The 96% success rate speaks for itself!",
+        comment: "The institutional pricing made this course accessible for our entire class. The peer review sessions for writing were incredibly valuable, and having examiner feedback at the institutional level provided consistency.",
         image: "/Coures.png"
       }
     ]
@@ -1023,7 +1023,7 @@ export const coursesData = {
       duration: "132 hours",
       period: "20-26 weeks",
       suitableFor: "Absolute Beginner",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "CLB 5 Success",
       passRate: "94%",
       features: "Complete Learning Path + Exam Success Guarantee"
@@ -1115,17 +1115,17 @@ export const coursesData = {
     ],
     reviews: [
       {
-        name: "Chen Xiaoli",
+        name: "Victoria Smith",
         role: "Immigration Candidate",
         rating: 5,
-        comment: "This COMBO package was exactly what I needed as a complete beginner! Going from zero French to CLB5 in 132 hours seemed impossible, but the systematic approach worked perfectly. The integration of foundation building with exam preparation was seamless and cost-effective.",
+        comment: "This COMBO package was exactly what I needed as a complete beginner! Going from zero French to CLB5 in 132 hours seemed impossible, but the systematic approach worked perfectly.",
         image: "/Coures.png"
       },
       {
-        name: "Wang Jiaming",
+        name: "Nathaniel Brown",
         role: "Software Engineer",
         rating: 5,
-        comment: "The value of this package is incredible! I saved a lot compared to taking individual courses. The progression from basics to exam success was logical and well-paced. Having everything in one package with consistent instructors made the learning journey smooth and efficient.",
+        comment: "The value of this package is incredible! I saved a lot compared to taking individual courses. The progression from basics to exam success was logical and well-paced.",
         image: "/Coures.png"
       }
     ]
@@ -1150,7 +1150,7 @@ export const coursesData = {
       duration: "412 hours",
       period: "35-45 weeks",
       suitableFor: "Absolute Beginner",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "B2 Success",
       passRate: "92%",
       features: "Complete Advanced Learning Path + B2 Exam Excellence"
@@ -1248,17 +1248,17 @@ export const coursesData = {
     ],
     reviews: [
       {
-        name: "Li Weihua",
+        name: "Alexander Wilson",
         role: "PhD Candidate",
         rating: 5,
-        comment: "This comprehensive B2 package was a game-changer for my academic career! Going from zero French to B2 level in 412 hours seemed ambitious, but the systematic progression through all levels was expertly designed. The savings compared to individual courses made it financially feasible for a student.",
+        comment: "This comprehensive B2 package was a game-changer for my academic career! Going from zero French to B2 level in 412 hours seemed ambitious, but the systematic progression through all levels was expertly designed.",
         image: "/Coures.png"
       },
       {
-        name: "Zhang Qingmei",
+        name: "Rachel Taylor",
         role: "International Business Manager",
         rating: 5,
-        comment: "The value proposition of this B2 package is unmatched! I needed advanced French for international business, and this package delivered everything from basics to sophisticated communication. The integration of all levels with exam preparation was seamless and highly effective.",
+        comment: "The value proposition of this B2 package is unmatched! I needed advanced French for international business, and this package delivered everything from basics to sophisticated communication.",
         image: "/Coures.png"
       }
     ]
@@ -1283,7 +1283,7 @@ export const coursesData = {
       duration: "612 hours",
       period: "45-60 weeks",
       suitableFor: "Absolute Beginner",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "CLB 7 Excellence",
       passRate: "91%",
       features: "Ultimate Learning Path + CLB7 Excellence Guarantee"
@@ -1389,17 +1389,17 @@ export const coursesData = {
     ],
     reviews: [
       {
-        name: "Chen Guangming",
+        name: "Christopher Davis",
         role: "University Professor",
         rating: 5,
-        comment: "This ultimate CLB7 package represents the pinnacle of French learning programs! The journey from zero to CLB7 in 612 hours was expertly designed with seamless progression through all levels. The five expert instructors provided unparalleled guidance. This investment changed my entire academic career trajectory.",
+        comment: "This ultimate CLB7 package represents the pinnacle of French learning programs! The journey from zero to CLB7 in 612 hours was expertly designed with seamless progression through all levels.",
         image: "/Coures.png"
       },
       {
-        name: "Liu Xiaoyan",
+        name: "Amanda White",
         role: "Senior Executive",
         rating: 5,
-        comment: "The comprehensive nature and value of this ultimate package is extraordinary! I needed the highest level French for international executive roles, and this package delivered beyond expectations. The integration of all learning stages with superior exam preparation created an unmatched learning experience. Worth every penny!",
+        comment: "The comprehensive nature and value of this ultimate package is extraordinary! I needed the highest level French for international executive roles, and this package delivered beyond expectations.",
         image: "/Coures.png"
       }
     ]
@@ -1424,7 +1424,7 @@ export const coursesData = {
       duration: "999 hours",
       period: "Unlimited",
       suitableFor: "Absolute Beginner",
-      language: "French + Chinese",
+      language: "French",
       targetLevel: "Unlimited Excellence",
       passRate: "100%",
       features: "Unlimited Learning + 60 One-on-One Examiner Sessions + Lifetime Access"
@@ -1507,17 +1507,17 @@ export const coursesData = {
     ],
     reviews: [
       {
-        name: "Wang Zhigang",
+        name: "Benjamin Thompson",
         role: "CEO",
         rating: 5,
-        comment: "The VIP program is simply extraordinary! Having unlimited access to all courses plus 60 one-on-one sessions with current examiners provided an unmatched learning experience. The personalized approach and flexibility allowed me to achieve my French goals efficiently while managing my busy executive schedule.",
+        comment: "The VIP program is simply extraordinary! Having unlimited access to all courses plus 60 one-on-one sessions with current examiners provided an unmatched learning experience.",
         image: "/Coures.png"
       },
       {
-        name: "Liu Meifeng",
+        name: "Michelle Garcia",
         role: "International Lawyer",
         rating: 5,
-        comment: "This VIP investment was life-changing! The unlimited learning privilege means I can continuously improve my French for years to come. The examiner insights and personalized curriculum design exceeded all expectations. Perfect for professionals who demand excellence and flexibility.",
+        comment: "This VIP investment was life-changing! The unlimited learning privilege means I can continuously improve my French for years to come. Perfect for professionals who demand excellence and flexibility.",
         image: "/Coures.png"
       }
     ]
