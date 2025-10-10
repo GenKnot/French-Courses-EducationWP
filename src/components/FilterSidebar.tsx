@@ -8,8 +8,6 @@ interface Course {
   title: string;
   description: string;
   price: number;
-  views: number;
-  students: number;
   category: string;
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface CourseCardProps {
   id: string;
@@ -25,10 +26,13 @@ export default function CourseCard({
         <div className="bg-white rounded-lg p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-all duration-200 cursor-pointer">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <div className="w-full sm:w-32 h-32 sm:h-24 flex items-center justify-center rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
-              <img
+              <Image
                 src="/Coures.png"
                 alt="Course"
+                width={128}
+                height={96}
                 className="w-full h-full object-cover"
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
             
@@ -57,10 +61,13 @@ export default function CourseCard({
     <Link href={`/courses/${id}`} className="block">
       <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden cursor-pointer">
         <div className="relative h-32 flex items-center justify-center">
-          <img
+          <Image
             src="/Coures.png"
             alt="Course"
+            width={400}
+            height={128}
             className="w-full h-full object-cover"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
         

@@ -26,7 +26,7 @@ export default function CourseLayout() {
     priceRange: "all"
   });
 
-  const courses: Course[] = Object.entries(coursesData).map(([slug, courseData], index) => {
+  const courses: Course[] = Object.entries(coursesData).map(([slug, courseData]) => {
     let category = "Basic Courses";
     if (courseData.category === "EXAM") {
       category = "Exam Preparation";
